@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# After confirming a production domain, set siteUrl in src/data/site.js
+# and optionally add: Sitemap: <origin>/sitemap.xml

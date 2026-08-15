@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#070707" />
+    <meta
+      name="description"
+      content="ZakSpeed is an athlete, creator and entrepreneur documenting fitness, lifestyle and entertainment while building SpeedX, a challenge-based social platform."
+    />
+    <title>ZakSpeed — Athlete, Creator & Founder of SpeedX</title>
+
+    <!-- siteUrl / ogImage are injected from src/data/site.js at build time. -->
+    <link rel="canonical" id="canonical-url" data-site-url="__SITE_URL__" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="ZakSpeed" />
+    <meta property="og:title" content="ZakSpeed — Athlete, Creator & Founder of SpeedX" />
+    <meta
+      property="og:description"
+      content="ZakSpeed is an athlete, creator and entrepreneur documenting fitness, lifestyle and entertainment while building SpeedX."
+    />
+    <meta property="og:url" content="" data-site-url="__SITE_URL__" />
+    <meta property="og:image" content="" data-og-path="__OG_IMAGE_PATH__" />
+    <meta property="og:image:alt" content="ZakSpeed — Athlete, Creator & Founder of SpeedX" />
+
+    <meta name="twitter:card" content="__TWITTER_CARD__" />
+    <meta name="twitter:title" content="ZakSpeed — Athlete, Creator & Founder of SpeedX" />
+    <meta
+      name="twitter:description"
+      content="ZakSpeed is an athlete, creator and entrepreneur documenting fitness, lifestyle and entertainment while building SpeedX."
+    />
+    <meta name="twitter:image" content="" data-og-path="__OG_IMAGE_PATH__" />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+    <meta name="apple-mobile-web-app-title" content="ZakSpeed" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      (function applySiteUrl() {
+        var canonical = document.getElementById('canonical-url')
+        var configured =
+          (canonical && canonical.getAttribute('data-site-url')) || ''
+        var origin = (configured || window.location.origin).replace(/\/$/, '')
+        if (canonical) canonical.setAttribute('href', origin + '/')
+        var ogUrl = document.querySelector('meta[property="og:url"]')
+        if (ogUrl) ogUrl.setAttribute('content', origin + '/')
+
+        var ogImage = document.querySelector('meta[property="og:image"]')
+        var twitterImage = document.querySelector('meta[name="twitter:image"]')
+        var ogPath =
+          (ogImage && ogImage.getAttribute('data-og-path')) ||
+          (twitterImage && twitterImage.getAttribute('data-og-path')) ||
+          ''
+        if (ogPath) {
+          var imageUrl = origin + (ogPath.charAt(0) === '/' ? ogPath : '/' + ogPath)
+          if (ogImage) ogImage.setAttribute('content', imageUrl)
+          if (twitterImage) twitterImage.setAttribute('content', imageUrl)
+        } else {
+          if (ogImage) ogImage.remove()
+          if (twitterImage) twitterImage.remove()
+        }
+      })()
+    </script>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
