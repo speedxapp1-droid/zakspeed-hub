@@ -113,7 +113,9 @@ export default function Hero() {
           <p className="text-[11px] font-medium uppercase tracking-[0.18em] text-subtle">
             Follow ZakSpeed
           </p>
-          <SocialLinks />
+          <SocialLinks
+            platforms={site.socials.filter((social) => social.id !== 'linkedin')}
+          />
         </div>
       </Container>
     </section>

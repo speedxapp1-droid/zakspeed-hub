@@ -23,11 +23,17 @@ export default function About() {
                   {site.aboutStory}
                 </p>
                 <p className="mt-6 text-sm text-subtle">
+                  {site.legalName}
+                </p>
+                <p className="mt-2 text-sm text-subtle">
                   {site.identity}
                   <span className="mx-2 text-accent" aria-hidden="true">
                     •
                   </span>
                   {site.founderLine}
+                </p>
+                <p className="mt-2 text-sm text-subtle">
+                  {site.role}. {site.education}.
                 </p>
               </div>
               <ul className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">

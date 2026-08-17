@@ -32,3 +32,11 @@ export function FacebookIcon({ className = 'size-5' }) {
   )
 }
 
+export function LinkedInIcon({ className = 'size-5' }) {
+  return (
+    <svg viewBox="0 0 24 24" className={className} aria-hidden="true" fill="currentColor">
+      <path d="M6.5 9.5H3.7V20h2.8V9.5ZM5.1 4A1.65 1.65 0 1 0 5.1 7.3 1.65 1.65 0 0 0 5.1 4ZM20.3 13.2c0-3.1-1.7-4.5-3.9-4.5a3.4 3.4 0 0 0-3 1.6h-.1V9.5H10.6c0 1.8 0 10.5 0 10.5h2.8v-5.9c0-.3 0-.6.1-.8a2 2 0 0 1 1.9-1.3c1.3 0 1.8 1 1.8 2.4V20h2.8v-6.8Z" />
+    </svg>
+  )
+}
+

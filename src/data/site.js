@@ -4,21 +4,23 @@
  */
 export const site = {
   name: 'Zak Speed',
+  legalName: 'Zakaria Adam',
   brand: 'ZakSpeed',
   handle: '@ZakSpeed',
   identity: 'Athlete • Creator • Entrepreneur',
   identityParts: ['Athlete', 'Creator', 'Entrepreneur'],
   founderLine: 'Founder of SpeedX',
-  role: 'Computer Science student',
+  role: 'Computer Science student specializing in Cybersecurity',
+  education: 'Al-Bukhari International University, Malaysia',
   positioning: 'Building, competing, creating, and documenting the work in public.',
   bio: 'Athlete and entrepreneur documenting calisthenics, running, lifestyle, entertainment, and the process of building SpeedX.',
   about:
     'ZakSpeed is an athlete, creator, and entrepreneur documenting the work as it happens — training physically, making real-life content, and building products.',
   aboutStory:
-    'He is a Computer Science student and the founder of SpeedX. The through-line is the same across training, content, and technology: learn, build, and share the process.',
-  email: 'zakspeedbusiness@gmail.com',
+    'He is a Computer Science student specializing in Cybersecurity at Al-Bukhari International University, Malaysia, and the founder of SpeedX. The through-line is the same across training, content, and technology: learn, build, and share the process.',
+  email: 'zakspeed.business@gmail.com',
   mailto:
-    'mailto:zakspeedbusiness@gmail.com?subject=Brand%20Collaboration%20Inquiry',
+    'mailto:zakspeed.business@gmail.com?subject=Brand%20Collaboration%20Inquiry',
   /**
    * PRODUCTION URL — the only place to set the live origin.
    * No trailing slash. Example: 'https://www.your-confirmed-domain.com'
@@ -48,7 +50,7 @@ export const site = {
     },
     {
       title: 'Technology',
-      text: 'Computer Science study applied to product thinking and building in public.',
+      text: 'Computer Science study in Cybersecurity, applied to product thinking and building in public.',
     },
     {
       title: 'Entrepreneurship',
@@ -66,14 +68,14 @@ export const site = {
     {
       id: 'tiktok',
       name: 'TikTok',
-      href: 'https://www.tiktok.com/@zakspeedy',
+      href: 'https://www.tiktok.com/@zakspeedy?_r=1&_t=ZS-98vqpP2lLYv',
       handle: '@zakspeedy',
       action: 'Follow',
     },
     {
       id: 'instagram',
       name: 'Instagram',
-      href: 'https://www.instagram.com/zakspeeed/',
+      href: 'https://www.instagram.com/zakspeeed?igsh=MW5zZjkzN2RyNnpleA%3D%3D&utm_source=qr',
       handle: '@zakspeeed',
       action: 'Follow',
     },
@@ -87,9 +89,16 @@ export const site = {
     {
       id: 'facebook',
       name: 'Facebook',
-      href: 'https://www.facebook.com/share/1Bvoyq9QAB/',
+      href: 'https://www.facebook.com/share/1HT4dsctgk/?mibextid=wwXIfr',
       handle: 'ZakSpeed',
       action: 'Follow',
+    },
+    {
+      id: 'linkedin',
+      name: 'LinkedIn',
+      href: 'https://www.linkedin.com/in/zakaria-adam-14b3223a8?utm_source=share_via&utm_content=profile&utm_medium=member_ios',
+      handle: 'Zakaria Adam',
+      action: 'Connect',
     },
   ],
   nav: [
@@ -170,8 +179,28 @@ export const site = {
       'Previous partnerships will be listed here as they are published. None are shown yet.',
   },
   media: {
-    headline: 'Media Kit — Coming Soon',
-    text: 'Collaboration information, brand assets, and creator statistics will be published here when they are ready. For current brand inquiries, email directly.',
+    headline: 'Media Kit',
+    text: 'A professional media kit for brands, agencies, marketing managers, and collaboration partners.',
+    cta: 'View Media Kit',
+  },
+  videos: {
+    featured: {
+      id: 'N_3t8aoxoHA',
+      title: 'ZakSpeed — creator, athlete, and founder of SpeedX',
+      href: 'https://youtu.be/N_3t8aoxoHA',
+    },
+    supporting: [
+      {
+        id: 'L0AEMuki3cA',
+        title: 'ZakSpeed on YouTube',
+        href: 'https://youtu.be/L0AEMuki3cA',
+      },
+      {
+        id: '_bHLXY4HvM0',
+        title: 'ZakSpeed Shorts',
+        href: 'https://youtube.com/shorts/_bHLXY4HvM0',
+      },
+    ],
   },
   finalCta: {
     headline: 'Follow the journey.',

@@ -11,6 +11,10 @@ const modules = import.meta.glob(
     '../assets/zakspeed-profile.png',
     '../assets/zakspeed-logo.png',
     '../assets/speedx-logo.png',
+    '../assets/athletic.png',
+    '../assets/backflip.png',
+    '../assets/moddle lifestyle .png',
+    '../assets/ZakSpeed_Professional_Creator_Media_Kit.pdf',
   ],
   {
     eager: true,
@@ -29,4 +33,8 @@ export const assets = {
   profile: findAsset('zakspeed-profile.png'),
   logo: findAsset('zakspeed-logo.png'),
   speedxLogo: findAsset('speedx-logo.png'),
+  athletic: findAsset('athletic.png'),
+  backflip: findAsset('backflip.png'),
+  lifestyle: findAsset('moddle lifestyle .png'),
+  mediaKit: findAsset('ZakSpeed_Professional_Creator_Media_Kit.pdf'),
 }

@@ -1,11 +1,12 @@
 import { site } from '../data/site'
-import { FacebookIcon, InstagramIcon, TikTokIcon, YouTubeIcon } from './icons'
+import { FacebookIcon, InstagramIcon, LinkedInIcon, TikTokIcon, YouTubeIcon } from './icons'
 
 const socialIcons = {
   tiktok: TikTokIcon,
   instagram: InstagramIcon,
   youtube: YouTubeIcon,
   facebook: FacebookIcon,
+  linkedin: LinkedInIcon,
 }
 
 const cardClass =

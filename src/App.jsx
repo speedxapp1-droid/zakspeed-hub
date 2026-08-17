@@ -6,6 +6,7 @@ import Hero from './sections/Hero'
 import SocialHub from './sections/SocialHub'
 import About from './sections/About'
 import ContentAreas from './sections/ContentAreas'
+import FeaturedVideo from './sections/FeaturedVideo'
 import SpeedXSection from './sections/SpeedXSection'
 import CollaborationSection from './sections/CollaborationSection'
 import MediaKitSection from './sections/MediaKitSection'
@@ -59,6 +60,7 @@ export default function App() {
           <SocialHub />
           <SpeedXSection />
           <CollaborationSection />
+          <FeaturedVideo />
           <MediaKitSection />
           <FinalCTA />
         </main>
