@@ -19,7 +19,6 @@ export function youtubeEmbedSrc(id) {
   const params = new URLSearchParams({
     rel: '0',
     modestbranding: '1',
-    autoplay: '1',
   })
   return `https://www.youtube.com/embed/${id}?${params.toString()}`
 }

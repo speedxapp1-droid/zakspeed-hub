@@ -1,20 +1,12 @@
 /**
- * Optional brand assets. Drop files into src/assets/ with these exact names:
- *   - zakspeed-profile.png
- *   - zakspeed-logo.png
- *   - speedx-logo.png
- *
- * Missing files resolve to null and the UI shows a professional placeholder.
+ * Brand images stay in src/assets and are bundled by Vite.
+ * Creator media lives in public/media so production URLs stay stable.
  */
 const modules = import.meta.glob(
   [
     '../assets/zakspeed-profile.png',
     '../assets/zakspeed-logo.png',
     '../assets/speedx-logo.png',
-    '../assets/athletic.png',
-    '../assets/backflip.png',
-    '../assets/moddle lifestyle .png',
-    '../assets/ZakSpeed_Professional_Creator_Media_Kit.pdf',
   ],
   {
     eager: true,
@@ -33,8 +25,8 @@ export const assets = {
   profile: findAsset('zakspeed-profile.png'),
   logo: findAsset('zakspeed-logo.png'),
   speedxLogo: findAsset('speedx-logo.png'),
-  athletic: findAsset('athletic.png'),
-  backflip: findAsset('backflip.png'),
-  lifestyle: findAsset('moddle lifestyle .png'),
-  mediaKit: findAsset('ZakSpeed_Professional_Creator_Media_Kit.pdf'),
+  athletic: '/media/photos/athletic.png',
+  backflip: '/media/photos/backflip.png',
+  lifestyle: encodeURI('/media/photos/moddle lifestyle .png'),
+  mediaKit: '/media/media-kit/ZakSpeed_Professional_Creator_Media_Kit.pdf',
 }
