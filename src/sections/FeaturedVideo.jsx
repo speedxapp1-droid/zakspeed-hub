@@ -1,6 +1,5 @@
 import { useCallback, useState } from 'react'
 import { site } from '../data/site'
-import { assets } from '../lib/assets'
 import BrandImage from '../components/BrandImage'
 import Container from '../components/Container'
 import MediaLightbox from '../components/MediaLightbox'
@@ -8,20 +7,7 @@ import Reveal from '../components/Reveal'
 import SectionHeading from '../components/SectionHeading'
 import VideoCard from '../components/VideoCard'
 
-const photos = [
-  {
-    src: assets.athletic,
-    alt: 'ZakSpeed sprinting in a studio setting',
-  },
-  {
-    src: assets.backflip,
-    alt: 'ZakSpeed performing a backflip',
-  },
-  {
-    src: assets.lifestyle,
-    alt: 'ZakSpeed lifestyle portrait',
-  },
-].filter((photo) => photo.src)
+const photos = site.photos ?? []
 
 export default function FeaturedVideo() {
   const [item, setItem] = useState(null)
@@ -62,18 +48,18 @@ export default function FeaturedVideo() {
           {photos.length ? (
             <ul className="mt-3 grid grid-cols-1 gap-3 md:mt-4 md:grid-cols-2 md:gap-4 lg:grid-cols-3">
               {photos.map((photo) => (
-                <li key={photo.src}>
+                <li key={photo.id}>
                   <button
                     type="button"
                     onClick={() => setItem({ type: 'image', ...photo })}
                     className="card-surface group w-full overflow-hidden rounded-3xl text-left transition duration-300 hover:-translate-y-1 hover:border-white/14"
+                    aria-label={`View ${photo.title} image`}
                   >
                     <BrandImage
                       src={photo.src}
                       alt={photo.alt}
                       className="aspect-[3/4] h-full w-full object-cover object-center"
                     />
-                    <span className="sr-only">View full image</span>
                   </button>
                 </li>
               ))}

@@ -1,11 +1,12 @@
 import { FileText } from 'lucide-react'
 import { site } from '../data/site'
-import { assets } from '../lib/assets'
 import Button from '../components/Button'
 import Container from '../components/Container'
 import Reveal from '../components/Reveal'
 
 export default function MediaKitSection() {
+  const href = site.media.href
+
   return (
     <section id="media" className="section-anchor pb-16 md:pb-24 lg:pb-28">
       <Container>
@@ -20,13 +21,16 @@ export default function MediaKitSection() {
             <p className="mx-auto mt-4 max-w-xl text-[15px] leading-relaxed text-muted">
               {site.media.text}
             </p>
-            <Button
-              href={assets.mediaKit || site.mailto}
-              external={Boolean(assets.mediaKit)}
-              className="mt-7"
-            >
-              {site.media.cta}
-            </Button>
+            {href ? (
+              <Button href={href} external className="mt-7">
+                {site.media.cta}
+              </Button>
+            ) : (
+              <p className="mt-7 text-sm text-subtle">
+                The media kit is not available yet. For brand inquiries, use the
+                business email above.
+              </p>
+            )}
           </div>
         </Reveal>
       </Container>

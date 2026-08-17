@@ -179,24 +179,54 @@ export const site = {
       'Previous partnerships will be listed here as they are published. None are shown yet.',
   },
   media: {
+    id: 'media-kit',
+    type: 'pdf',
     headline: 'Media Kit',
+    title: 'Media Kit',
     text: 'A professional media kit for brands, agencies, marketing managers, and collaboration partners.',
     cta: 'View Media Kit',
+    href: '/media/media-kit/ZakSpeed_Professional_Creator_Media_Kit.pdf',
   },
+  photos: [
+    {
+      id: 'athletic',
+      type: 'image',
+      title: 'Athletic',
+      alt: 'ZakSpeed sprinting in a studio setting',
+      src: '/media/photos/athletic.png',
+    },
+    {
+      id: 'backflip',
+      type: 'image',
+      title: 'Backflip',
+      alt: 'ZakSpeed performing a backflip',
+      src: '/media/photos/backflip.png',
+    },
+    {
+      id: 'lifestyle',
+      type: 'image',
+      title: 'Lifestyle',
+      alt: 'ZakSpeed lifestyle portrait',
+      src: '/media/photos/zakspeed-lifestyle.png',
+    },
+  ],
   videos: {
     featured: {
       id: 'N_3t8aoxoHA',
+      type: 'video',
       title: 'ZakSpeed — creator, athlete, and founder of SpeedX',
       href: 'https://youtu.be/N_3t8aoxoHA',
     },
     supporting: [
       {
         id: 'L0AEMuki3cA',
+        type: 'video',
         title: 'ZakSpeed on YouTube',
         href: 'https://youtu.be/L0AEMuki3cA',
       },
       {
         id: '_bHLXY4HvM0',
+        type: 'video',
         title: 'ZakSpeed Shorts',
         href: 'https://youtube.com/shorts/_bHLXY4HvM0',
       },

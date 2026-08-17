@@ -1,6 +1,6 @@
 /**
- * Brand images stay in src/assets and are bundled by Vite.
- * Creator media lives in public/media so production URLs stay stable.
+ * Bundled brand images only. Creator media URLs live in src/data/site.js
+ * and map to files in public/media (copied to dist/media by Vite).
  */
 const modules = import.meta.glob(
   [
@@ -25,8 +25,4 @@ export const assets = {
   profile: findAsset('zakspeed-profile.png'),
   logo: findAsset('zakspeed-logo.png'),
   speedxLogo: findAsset('speedx-logo.png'),
-  athletic: '/media/photos/athletic.png',
-  backflip: '/media/photos/backflip.png',
-  lifestyle: encodeURI('/media/photos/moddle lifestyle .png'),
-  mediaKit: '/media/media-kit/ZakSpeed_Professional_Creator_Media_Kit.pdf',
 }

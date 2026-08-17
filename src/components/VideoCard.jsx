@@ -11,12 +11,13 @@ export default function VideoCard({ video, featured = false, onPlay }) {
       type="button"
       onClick={() => onPlay(video)}
       className="card-surface group w-full overflow-hidden rounded-3xl text-left transition duration-300 hover:-translate-y-1 hover:border-white/14"
+      aria-label={`Watch ${video.title}`}
     >
       <span className="relative block aspect-video overflow-hidden bg-bg-raised">
         {thumbFailed ? null : (
           <img
             src={youtubeThumb(video.id, quality)}
-            alt=""
+            alt={video.title}
             className="h-full w-full object-cover"
             onError={() => {
               const next = nextYoutubeThumbQuality(quality)
